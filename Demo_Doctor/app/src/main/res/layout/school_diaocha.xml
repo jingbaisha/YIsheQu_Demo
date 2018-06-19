@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_add_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_below="@+id/ti"
+            android:id="@+id/my_indent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/x27"
+                android:gravity="center"
+                android:text="1.本月您孩子是否有流感或者流感症状?"
+                android:textColor="@color/userblack"
+                android:textSize="14.5sp" />
+
+            <RadioGroup
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_marginLeft="@dimen/x27"
+                android:layout_marginTop="@dimen/y20"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="是"
+                    style="@style/Radio_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="否"
+                    style="@style/Radio_button"
+                    android:layout_marginLeft="@dimen/x46"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/gray_add_a"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/y20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x27"
+            android:gravity="center"
+            android:text="2.本月您孩子是否有流感或者流感症状?"
+            android:textColor="@color/userblack"
+            android:textSize="14.5sp" />
+
+        <RadioGroup
+            android:layout_marginLeft="@dimen/x27"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="是"
+                style="@style/Radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="否"
+                style="@style/Radio_button"
+                android:layout_marginLeft="@dimen/x46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="@dimen/x600"
+        android:layout_height="@dimen/y70"
+        android:layout_margin="15dp"
+        android:background="@drawable/yuan_blue"
+        android:gravity="center"
+        android:text="提交"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

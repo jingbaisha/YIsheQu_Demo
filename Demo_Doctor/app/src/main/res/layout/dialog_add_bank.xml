@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="@dimen/x489"
+        android:layout_height="@dimen/y344">
+        <TextView
+            android:text="添加银行卡"
+            android:gravity="center"
+            android:textColor="@color/userblack"
+            android:textSize="13.5sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:background="@drawable/yuan_white_c"
+                android:textSize="10.5sp"
+                android:textStyle="bold"
+                android:hint="请输入支付密码"
+                android:paddingLeft="@dimen/x10"
+                android:layout_marginLeft="@dimen/x29"
+                android:layout_width="@dimen/x270"
+                android:layout_height="@dimen/y60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="@dimen/y52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/but_ok"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:background="@drawable/yuan_blue_a"
+                android:layout_width="@dimen/x144"
+                android:layout_height="@dimen/y60" />
+            <Button
+                android:id="@+id/but_quxiao"
+                android:text="@string/cancel"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/x27"
+                android:background="@drawable/yuan_gray_a"
+                android:layout_width="@dimen/x144"
+                android:layout_height="@dimen/y60" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

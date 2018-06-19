@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.fanwang.demo_doctor"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //3.0版本的一个坑
+    configurations.all {
+        resolutionStrategy.force "com.android.support:support-annotations:27.1.1"
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/badgeview.jar')
+    //----------引导页面
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+    //----------黄油刀
+    compile 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+    //----------对话框
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    //-----------卡片布局
+    compile 'com.android.support:cardview-v7:26.0.0-alpha1'
+    //---------tablayout
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //----------日历控件
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    //----------解析
+    compile 'com.google.code.gson:gson:2.7'
+    //---------图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //----------圆形图片
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    //rx_Android
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.+'
+}

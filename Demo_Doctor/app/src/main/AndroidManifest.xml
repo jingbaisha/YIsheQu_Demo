@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fanwang.demo_doctor">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+        <activity android:name=".activity.Carousel_Items"></activity>
+        <activity android:name=".activity.Information_Items"></activity>
+        <activity android:name=".activity.Information"></activity>
+        <activity android:name=".activity.School_Diaocha"></activity>
+        <activity android:name=".activity.Health_promotion_Activity"></activity>
+        <activity android:name=".activity.Health_Promotion_fragment_a"></activity>
+        <activity android:name=".activity.DaiRenfu"></activity>
+        <activity android:name=".activity.Individual_Service"></activity>
+        <activity
+            android:name=".activity.All_reservation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"></activity>
+        <activity android:name=".activity.Service_packge"></activity>
+        <activity android:name=".activity.Personal_Data"></activity>
+        <activity
+            android:name=".activity.Qualification"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"></activity>
+        <activity android:name=".activity.Person_plan"></activity>
+        <activity android:name=".activity.Withdraw_deposit"></activity>
+        <activity android:name=".activity.Add_bank_card"></activity>
+        <activity android:name=".activity.My_bank_card"></activity>
+        <activity android:name=".activity.Payment_password"></activity>
+        <activity android:name=".activity.System_settings"></activity>
+        <activity android:name=".activity.Complaint_Advice"></activity>
+        <activity android:name=".activity.About_we"></activity>
+        <activity android:name=".activity.Work_Plan"></activity>
+        <activity android:name=".activity.Qr_code"></activity>
+        <activity android:name=".activity.Leave_Massage"></activity>
+        <activity android:name=".activity.Health_record"></activity>
+        <activity android:name=".activity.Bank_Add_New"></activity>
+        <activity android:name=".activity.Add_Service_Package" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"></activity>
+        <activity android:name=".activity.Register_Activity"></activity>
+        <activity android:name=".activity.Login_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Forger_the_Password"></activity>
+    </application>
+
+</manifest>

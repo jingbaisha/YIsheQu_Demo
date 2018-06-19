@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/gray_add_a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@id/title_fragment_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_below="@+id/title_fragment_content"
+        android:layout_marginLeft="@dimen/x34"
+        android:layout_marginRight="@dimen/x34"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:hint="欢迎反馈任何意见和问题，您的反馈也是我们产品进步的动力哦！"
+            android:textSize="10.5sp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y222"
+            android:layout_marginTop="@dimen/y32"
+            android:background="@drawable/yuan_white"
+            android:gravity="top" />
+        <TextView
+            android:text="您还可以输入1000个字"
+            android:textSize="10.5sp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:text="您的联系方式（QQ/微信号/微博/手机号）(选填)"
+            android:textSize="10.5sp"
+            android:textColor="@color/textblack9"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y222"
+            android:layout_marginTop="@dimen/y32"
+            android:background="@drawable/yuan_white"
+            android:gravity="top" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="@dimen/x558"
+        android:layout_height="@dimen/y68"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:background="@drawable/yuan_blue"
+        android:text="@string/submit"
+        android:layout_margin="@dimen/x30"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>
